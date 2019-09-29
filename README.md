@@ -11,6 +11,7 @@ This tool is designed in order to extract the main information from a picture of
 * Python 3.6.5 or later
 * tesseract 0.2.7 or later (command: `pip install pytesseract`)
 * opencv 4.1.0.25 or later (command: `pip install opencv-python`)
+* pyyaml 5.1.2 or later (command: `pip install pyyaml`)
 * *(optionnal)* Language pack from tesseract (source: <https://github.com/tesseract-ocr/tessdata>)
 
 ## Usage

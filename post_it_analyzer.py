@@ -1,4 +1,5 @@
 import sys, getopt
+import post_it
 
 DEFAULT_LANGUAGE = "en"
 USAGE = "post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>"
@@ -35,6 +36,12 @@ def main(argv, language = DEFAULT_LANGUAGE):
             sys.exit(0) 
 
     #TODO add core code here
+    
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    try:
+        main(sys.argv[1:])
+
+    except Exception as e:
+        print(e.args) 
+        print(e.__cause__) 
