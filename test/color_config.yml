@@ -1,0 +1,37 @@
+####### Reference colors #######
+
+# To add a new post-it type, you need to respect the following format:
+# - !PostItColor
+#   color:<color_name>
+#   type:<post-it_type>
+#   rgb:[<red>,<greeb>,<blue>]
+
+# Post-it INFO
+- !PostItColor
+  color: blue
+  type: info
+  rgb: [45,207,254]
+
+# Post-it WARNING
+- !PostItColor
+  color: orange
+  type: warning
+  rgb: [255,198,85]
+
+# Post-it DOING 
+- !PostItColor
+ color: green
+ type: doing
+ rgb: [158,237,74]
+
+# Post-it BACKLOG
+- !PostItColor
+ color: rose
+ type: backlog
+ rgb: [255,113,199]
+
+ # Post-it DONE
+- !PostItColor
+ color: yellow
+ type: done
+ rgb: [251,252,96]

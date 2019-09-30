@@ -1,5 +1,5 @@
 import sys, getopt
-import post_it
+import post_it_color
 
 DEFAULT_LANGUAGE = "en"
 USAGE = "post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>"
