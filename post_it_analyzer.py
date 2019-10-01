@@ -5,7 +5,7 @@ DEFAULT_LANGUAGE = "en"
 USAGE = "post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>"
 VERSION = "1.0"
 
-#TODO replace print by logger
+#TODO replace print by logger / Add return code manager
 
 def main(argv, language = DEFAULT_LANGUAGE):
     """ Main function """
