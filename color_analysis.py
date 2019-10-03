@@ -1,6 +1,5 @@
 import yaml
 import post_it_color
-import images
 from PIL import Image
 
 def nearest_color(file, configFile = "test/color_config.yml"):
@@ -16,7 +15,7 @@ def nearest_color(file, configFile = "test/color_config.yml"):
         blue_distance = (colors.rgb[2] - main_color[2]) ** 2
         min_color[red_distance + green_distance + blue_distance] = colors
     detected_color = min_color[min(min_color.keys())]
-    print("Reference detected color: {0} (RGB: {1}) - Type: {2}".format(detected_color.color, detected_color.rgb, detected_color.type))
+    print("[Debug] - Reference detected color: {0} (RGB: {1}) - Type: {2}".format(detected_color.color, detected_color.rgb, detected_color.type))
     return(detected_color)
 
 

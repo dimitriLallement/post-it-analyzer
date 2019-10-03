@@ -1,11 +1,13 @@
 import sys, getopt
-import post_it_color
+import cv2
+from color_analysis import nearest_color
+
 
 DEFAULT_LANGUAGE = "en"
 USAGE = "post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>"
 VERSION = "1.0"
 
-#TODO replace print by logger / Add return code manager
+#TODO replace print by logger / Add return code manager / Add unit test
 
 def main(argv, language = DEFAULT_LANGUAGE):
     """ Main function """
@@ -36,6 +38,10 @@ def main(argv, language = DEFAULT_LANGUAGE):
             sys.exit(0) 
 
     #TODO add core code here
+    file = input("File: ").strip()
+    image = cv2.imread(file)
+    result = nearest_color(file)
+    print(result)
     
 
 if __name__ == "__main__":

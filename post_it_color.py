@@ -2,7 +2,7 @@ import yaml
 
 class PostItColor(yaml.YAMLObject):
     """Class representing post-it color information (type of post-it, real color (RGB), detected color)"""
-    yaml_tag = u"!PostIt"
+    yaml_tag = u"!PostItColor"
 
     def __init__(self, color, type, rgb):
         """Constructor of the class with detected color (based on the config file), 
