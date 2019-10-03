@@ -1,9 +1,9 @@
 import sys, getopt
 import cv2
 from color_analysis import nearest_color
+from text_analysis import extract_text
 
-
-DEFAULT_LANGUAGE = "en"
+DEFAULT_LANGUAGE = "eng"
 USAGE = "post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>"
 VERSION = "1.0"
 
@@ -39,9 +39,8 @@ def main(argv, language = DEFAULT_LANGUAGE):
 
     #TODO add core code here
     file = input("File: ").strip()
-    image = cv2.imread(file)
-    result = nearest_color(file)
-    print(result)
+    color = nearest_color(file)
+    text = extract_text(file, language)
     
 
 if __name__ == "__main__":
