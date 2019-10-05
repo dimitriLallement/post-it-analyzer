@@ -16,7 +16,7 @@
 - !PostItColor
   color: orange
   type: warning
-  rgb: [255,198,85]
+  rgb: [255, 102,0]
 
 # Post-it DOING 
 - !PostItColor
@@ -34,4 +34,4 @@
 - !PostItColor
  color: yellow
  type: done
- rgb: [251,252,96]
+ rgb: [255,255,0]
