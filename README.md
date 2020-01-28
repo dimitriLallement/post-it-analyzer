@@ -6,7 +6,9 @@ This tool is designed in order to extract the main information from a picture of
 * **color:** the RGB color corresponding of the post-it color
 * **type:** if you want, you can list type of post-it according to its color (ex : blue = info, yellow = To do, etc.) in the property file.
 
-## Requirements
+## Getting Started
+
+### Prerequisites
 
 * Python 3.6.5 or later
 * tesseract 0.2.7 or later (command: `pip install pytesseract`)
@@ -15,9 +17,18 @@ This tool is designed in order to extract the main information from a picture of
 * At least one language pack from tesseract (linux command for english pack: `sudo apt-get install tesseract-ocr-eng`)
 * *(optionnal)* Others language packs from tesseract (source: <https://github.com/tesseract-ocr/tessdata>)
 
+### Installing
+
+```bash
+$ git clone https://github.com/dimitriLallement/post-it-analyzer.git
+$ cd post-it-analyzer
+#installer les dépendances
+$ pip install -r requirements.txt
+```
+
 ## Usage
 
-```python
+```bash
     python post_it_analyzer.py [-h|--help] [-v|--version=] [-l|--language=] <language>
 ```
 
@@ -32,7 +43,9 @@ File :
 
 And then you just have to give the path of the input file(ex: `C:\Users\Example\image\test.png`)
 
-## TODO => Explain how the config file works
+### Edit the configuration file
+
+TODO => Explain how the config file works
 
 ## Contributing
 
